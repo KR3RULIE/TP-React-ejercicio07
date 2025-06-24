@@ -8,6 +8,7 @@ import frontendDev from "../assets/frontend-dev.jpg";
 import digitalStrategist from "../assets/digital-strategist.jpg";
 import backendDev from "../assets/backend-dev.webp";
 import devOpsEngineer from "../assets/devops.png";
+import "../index.css";
 
 const EmpleadoList = () => {
   let empleados = [
@@ -76,10 +77,10 @@ const EmpleadoList = () => {
     },
   ];
   return (
-    <section className="container">
-      <div className="border border-2 border-info mx-auto my-3">
+    <section className="container sombra bg-info-subtle rounded px-0">
+      <div className="mx-auto my-3">
         {empleados.map((empleado) => (
-          <EmpleadoRow key={empleados.id} empleado={empleado}></EmpleadoRow>
+          <EmpleadoRow key={empleado.id} empleado={empleado}></EmpleadoRow>
         ))}
       </div>
     </section>

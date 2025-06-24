@@ -5,10 +5,10 @@ function App() {
   return (
     <>
       <main>
-        <h1 className="text-center">Empleados</h1>
+        <h1 className="text-center mt-4 text-danger">Empleados</h1>
         <EmpleadoList></EmpleadoList>
       </main>
-      <footer className="text-center text-light bg-black py-1">
+      <footer className="text-center text-light bg-black py-1 sombra">
         <p>
           By{" "}
           <a
